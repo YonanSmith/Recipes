@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Recipes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_recipes">Buscar receta...</string>
+    <string name="foto_de_la_receta">Foto de la receta</string>
+    <string name="icono_de_mapa">Icono de mapa</string>
+    <string name="ingredientes">Ingredientes:</string>
+    <string name="descripci_n">Descripción:</string>
+    <string name="dificultad">Dificultad:</string>
+    <string name="imagen_reloj">Imagen reloj</string>
+    <string name="datos_autor">Datos del autor:</string>
+    <string name="preparacion">Preparación:</string>
+</resources>

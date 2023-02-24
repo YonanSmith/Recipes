@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardRecipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_min"
+    android:checkable="true"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/cornerRadius_default"
+    app:cardElevation="@dimen/cardElevation_default">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="0dp"
+            android:layout_height="115dp"
+            android:contentDescription="@string/foto_de_la_receta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.30" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_min"
+            android:layout_marginTop="@dimen/margin_top_min"
+            android:layout_marginEnd="@dimen/margin_end_min"
+            android:maxLines="2"
+            tools:text="Arroz con pollo y papa a la huancaina"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_min"
+            android:layout_marginBottom="@dimen/margin_bottom_min"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/ivTime"
+            app:layout_constraintEnd_toEndOf="@+id/tvName"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            tools:text="Descripción de la receta" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <ImageView
+            android:id="@+id/ivTime"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="@dimen/margin_bottom_min"
+            android:src="@drawable/ic_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvDescription" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_min"
+            android:layout_marginEnd="@dimen/margin_end_min"
+            android:text="2 horas"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTime"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toEndOf="@+id/ivTime"
+            app:layout_constraintTop_toTopOf="@+id/ivTime" />
+
+        <ImageView
+            android:id="@+id/ivDifficulty"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_dificultad"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDuration"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/tvDuration" />
+
+        <TextView
+            android:id="@+id/tvDifficulty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_min"
+            tools:text="2 horas"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDifficulty"
+            app:layout_constraintEnd_toEndOf="@+id/tvDescription"
+            app:layout_constraintStart_toEndOf="@+id/ivDifficulty"
+            app:layout_constraintTop_toTopOf="@+id/ivDifficulty" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top_max">32dp</dimen>
+    <dimen name="margin_bottom_max">32dp</dimen>
+    <dimen name="margin_start_max">32dp</dimen>
+    <dimen name="margin_end_max">32dp</dimen>
+
+    <dimen name="margin_top_default">16dp</dimen>
+    <dimen name="margin_bottom_default">16dp</dimen>
+    <dimen name="margin_start_default">16dp</dimen>
+    <dimen name="margin_end_default">16dp</dimen>
+
+    <dimen name="margin_top_min">8dp</dimen>
+    <dimen name="margin_bottom_min">8dp</dimen>
+    <dimen name="margin_start_min">8dp</dimen>
+    <dimen name="margin_end_min">8dp</dimen>
+
+    <dimen name="text_size_default">16sp</dimen>
+    <dimen name="text_size_min">14sp</dimen>
+    <dimen name="text_size_sub_title">11sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="padding_min">4dp</dimen>
+    <dimen name="padding_max">16dp</dimen>
+
+    <dimen name="margin_min">8dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_max">32dp</dimen>
+
+    <dimen name="cornerRadius_default">20dp</dimen>
+    <dimen name="cardElevation_default">10dp</dimen>
+    <dimen name="cardElevation_min">2dp</dimen>
+
+    <dimen name="icon_size">40dp</dimen>
+    <dimen name="radius_dialog_default">26dp</dimen>
+    <dimen name="width_icon_size_min">20dp</dimen>
+    <dimen name="height_icon_size_min">20dp</dimen>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#031B71</color>
+    <color name="blue2">#00276c</color>
+    <color name="blue3">#014ba0</color>
+    <color name="blue4">#5b7dcf</color>
+    <color name="blue5">#96b3ff</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#CDCA83</color>
+    <color name="green">#DF78BDA2</color>
+    <color name="sky_blue">#259FFB</color>
+    <color name="purple">#8311D5</color>
+    <color name="orange">#D1B217</color>
+    <color name="gray">#EE5E5E5E</color>
+    <color name="sky_gray">#D0A3A3A3</color>
+
+    <color name="colorDark">#141c24</color>
+    <color name="primaryColor">#ffab4b</color>
+    <color name="primaryColorDark">#c77c19</color>
+    <color name="colorWhite">#E2E4E6</color>
+    <color name="colorDarkLight">#343c44</color>
+    <color name="colorPrimaryLight">#FFFFCC80</color>
+    <color name="colorError">#FFFF5252</color>
+    <color name="colorErrorLight">#FFE57373</color>
+    <color name="colorInfo">#FF5E6FA4</color>
+    <color name="colorInfoLight">#FFB3C4F9</color>
+    <color name="colorSuccess">#FF00C853</color>
+    <color name="colorSuccessLight">#FF81C784</color>
+</resources>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.Home.Detail.DetailFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                android:id="@+id/containerCarousel"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:autoWidthFixing="true"
+                app:carouselType="BLOCK"
+                app:imageScaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:scaleOnScroll="true"
+                app:scalingFactor="0.15">
+
+                <ImageView
+                    android:id="@+id/ivMap"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/margin_top_min"
+                    android:layout_marginEnd="@dimen/margin_end_min"
+                    android:background="@drawable/background_round"
+                    android:contentDescription="@string/icono_de_mapa"
+                    android:src="@drawable/mapa"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </org.imaginativeworld.whynotimagecarousel.ImageCarousel>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_min"
+                android:layout_marginTop="@dimen/margin_top_min"
+                android:layout_marginEnd="@dimen/margin_end_min"
+                app:cardCornerRadius="@dimen/cornerRadius_default"
+                app:cardElevation="@dimen/cardElevation_min"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/containerCarousel">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_max">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                        tools:text="TITULO" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_min"
+                app:cardCornerRadius="@dimen/cornerRadius_default"
+                app:cardElevation="@dimen/cardElevation_min"
+                app:layout_constraintEnd_toEndOf="@+id/cardName"
+                app:layout_constraintStart_toStartOf="@+id/cardName"
+                app:layout_constraintTop_toBottomOf="@+id/cardName">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_max">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/descripci_n"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_min"
+                        tools:text="DESCRIPTION" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardInformation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_min"
+                app:cardCornerRadius="@dimen/cornerRadius_default"
+                app:cardElevation="@dimen/cardElevation_min"
+                app:layout_constraintEnd_toEndOf="@+id/cardDescription"
+                app:layout_constraintStart_toStartOf="@+id/cardDescription"
+                app:layout_constraintTop_toBottomOf="@+id/cardDescription">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_max">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/width_icon_size_min"
+                            android:layout_height="@dimen/height_icon_size_min"
+                            android:contentDescription="@string/imagen_reloj"
+                            android:src="@drawable/ic_time" />
+
+                        <TextView
+                            android:id="@+id/tvDuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_min"
+                            tools:text="2 horas" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivDifficulty"
+                            android:layout_width="@dimen/width_icon_size_min"
+                            android:layout_height="@dimen/height_icon_size_min"
+                            android:src="@drawable/ic_dificultad" />
+
+                        <TextView
+                            android:id="@+id/tvDifficulty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_min"
+                            tools:text="Difícil" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardIngredients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_min"
+                app:cardCornerRadius="@dimen/cornerRadius_default"
+                app:cardElevation="@dimen/cardElevation_min"
+                app:layout_constraintEnd_toEndOf="@+id/cardInformation"
+                app:layout_constraintStart_toStartOf="@+id/cardInformation"
+                app:layout_constraintTop_toBottomOf="@+id/cardInformation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_max">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ingredientes"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
+
+                    <TextView
+                        android:id="@+id/tvIngredients"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_min"
+                        tools:text="- Pollo \n- Cerveza \n- Cerveza \n- Cerveza" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardPreparation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_min"
+                app:cardCornerRadius="@dimen/cornerRadius_default"
+                app:cardElevation="@dimen/cardElevation_min"
+                app:layout_constraintEnd_toEndOf="@+id/cardIngredients"
+                app:layout_constraintStart_toStartOf="@+id/cardIngredients"
+                app:layout_constraintTop_toBottomOf="@+id/cardIngredients">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_max">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/preparacion"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
+
+                    <TextView
+                        android:id="@+id/tvDataPreparation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_min" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardAutor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_min"
+                android:layout_marginBottom="@dimen/margin_bottom_min"
+                app:cardCornerRadius="@dimen/cornerRadius_default"
+                app:cardElevation="@dimen/cardElevation_min"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cardPreparation"
+                app:layout_constraintStart_toStartOf="@+id/cardPreparation"
+                app:layout_constraintTop_toBottomOf="@+id/cardPreparation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_max">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/datos_autor"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleSmall" />
+
+                    <TextView
+                        android:id="@+id/tvDataAutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Nombres: Yonan Smith Cuba LLacsahuache\nEdad: 45 años\nNacionalidad: Peruana"
+                        android:layout_marginTop="@dimen/margin_top_min" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
