@@ -87,12 +87,12 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
 
-    // Carousel Images
+    // CAROUSEL IMAGES
     // Circle Indicator (To fix the xml preview "Missing classes" error)
     implementation 'me.relex:circleindicator:2.1.6'
     implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0'
 
-    // Room
+    // ROOM
     implementation "androidx.room:room-ktx:$roomVersion"
     implementation "androidx.room:room-runtime:$roomVersion"
     kapt "androidx.room:room-compiler:$roomVersion"
@@ -104,7 +104,7 @@ dependencies {
     // SWIPE REFRESH LAYOUT
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
-    //FACEBOOK
+    // FACEBOOK LOADING
     implementation "com.facebook.shimmer:shimmer:0.5.0"
 
     // TESTING
